@@ -307,3 +307,239 @@
 2021-05-25 12:22:25,935:INFO:Decision Tree Regressor Imported succesfully
 2021-05-25 12:22:25,956:INFO:Starting cross validation
 2021-05-25 12:22:25,957:INFO:Cross validating with TimeSeriesSplit(max_train_size=None, n_splits=10), n_jobs=1
+2021-05-25 12:22:39,287:INFO:Calculating mean and std
+2021-05-25 12:22:39,288:INFO:Creating metrics dataframe
+2021-05-25 12:22:39,292:INFO:Uploading results into container
+2021-05-25 12:22:39,292:INFO:Uploading model into container now
+2021-05-25 12:22:39,293:INFO:create_model_container: 9
+2021-05-25 12:22:39,293:INFO:master_model_container: 9
+2021-05-25 12:22:39,293:INFO:display_container: 2
+2021-05-25 12:22:39,294:INFO:DecisionTreeRegressor(ccp_alpha=0.0, criterion='mse', max_depth=None,
+                      max_features=None, max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, presort='deprecated',
+                      random_state=123, splitter='best')
+2021-05-25 12:22:39,294:INFO:create_model() succesfully completed......................................
+2021-05-25 12:22:39,461:INFO:SubProcess create_model() end ==================================
+2021-05-25 12:22:39,461:INFO:Creating metrics dataframe
+2021-05-25 12:22:39,480:INFO:Initializing Random Forest Regressor
+2021-05-25 12:22:39,480:INFO:Total runtime is 0.6883488059043885 minutes
+2021-05-25 12:22:39,489:INFO:SubProcess create_model() called ==================================
+2021-05-25 12:22:39,489:INFO:Initializing create_model()
+2021-05-25 12:22:39,490:INFO:create_model(estimator=rf, fold=TimeSeriesSplit(max_train_size=None, n_splits=10), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x000001EE44D0CB80>, kwargs={})
+2021-05-25 12:22:39,490:INFO:Checking exceptions
+2021-05-25 12:22:39,490:INFO:Importing libraries
+2021-05-25 12:22:39,490:INFO:Copying training dataset
+2021-05-25 12:22:39,494:INFO:Defining folds
+2021-05-25 12:22:39,495:INFO:Declaring metric variables
+2021-05-25 12:22:39,505:INFO:Importing untrained model
+2021-05-25 12:22:39,514:INFO:Random Forest Regressor Imported succesfully
+2021-05-25 12:22:39,533:INFO:Starting cross validation
+2021-05-25 12:22:39,533:INFO:Cross validating with TimeSeriesSplit(max_train_size=None, n_splits=10), n_jobs=1
+2021-05-25 12:25:40,638:INFO:Calculating mean and std
+2021-05-25 12:25:40,639:INFO:Creating metrics dataframe
+2021-05-25 12:25:40,643:INFO:Uploading results into container
+2021-05-25 12:25:40,643:INFO:Uploading model into container now
+2021-05-25 12:25:40,643:INFO:create_model_container: 10
+2021-05-25 12:25:40,643:INFO:master_model_container: 10
+2021-05-25 12:25:40,643:INFO:display_container: 2
+2021-05-25 12:25:40,644:INFO:RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-1, oob_score=False,
+                      random_state=123, verbose=0, warm_start=False)
+2021-05-25 12:25:40,644:INFO:create_model() succesfully completed......................................
+2021-05-25 12:25:40,762:INFO:SubProcess create_model() end ==================================
+2021-05-25 12:25:40,762:INFO:Creating metrics dataframe
+2021-05-25 12:25:40,787:INFO:Initializing Extra Trees Regressor
+2021-05-25 12:25:40,787:INFO:Total runtime is 3.7101224263509116 minutes
+2021-05-25 12:25:40,798:INFO:SubProcess create_model() called ==================================
+2021-05-25 12:25:40,798:INFO:Initializing create_model()
+2021-05-25 12:25:40,798:INFO:create_model(estimator=et, fold=TimeSeriesSplit(max_train_size=None, n_splits=10), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x000001EE44D0CB80>, kwargs={})
+2021-05-25 12:25:40,799:INFO:Checking exceptions
+2021-05-25 12:25:40,799:INFO:Importing libraries
+2021-05-25 12:25:40,799:INFO:Copying training dataset
+2021-05-25 12:25:40,802:INFO:Defining folds
+2021-05-25 12:25:40,803:INFO:Declaring metric variables
+2021-05-25 12:25:40,813:INFO:Importing untrained model
+2021-05-25 12:25:40,822:INFO:Extra Trees Regressor Imported succesfully
+2021-05-25 12:25:40,840:INFO:Starting cross validation
+2021-05-25 12:25:40,840:INFO:Cross validating with TimeSeriesSplit(max_train_size=None, n_splits=10), n_jobs=1
+2021-05-25 12:27:01,596:INFO:Calculating mean and std
+2021-05-25 12:27:01,598:INFO:Creating metrics dataframe
+2021-05-25 12:27:01,601:INFO:Uploading results into container
+2021-05-25 12:27:01,602:INFO:Uploading model into container now
+2021-05-25 12:27:01,602:INFO:create_model_container: 11
+2021-05-25 12:27:01,602:INFO:master_model_container: 11
+2021-05-25 12:27:01,602:INFO:display_container: 2
+2021-05-25 12:27:01,602:INFO:ExtraTreesRegressor(bootstrap=False, ccp_alpha=0.0, criterion='mse',
+                    max_depth=None, max_features='auto', max_leaf_nodes=None,
+                    max_samples=None, min_impurity_decrease=0.0,
+                    min_impurity_split=None, min_samples_leaf=1,
+                    min_samples_split=2, min_weight_fraction_leaf=0.0,
+                    n_estimators=100, n_jobs=-1, oob_score=False,
+                    random_state=123, verbose=0, warm_start=False)
+2021-05-25 12:27:01,602:INFO:create_model() succesfully completed......................................
+2021-05-25 12:27:01,752:INFO:SubProcess create_model() end ==================================
+2021-05-25 12:27:01,752:INFO:Creating metrics dataframe
+2021-05-25 12:27:01,816:INFO:Initializing create_model()
+2021-05-25 12:27:01,816:INFO:create_model(estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), fold=TimeSeriesSplit(max_train_size=None, n_splits=10), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-25 12:27:01,816:INFO:Checking exceptions
+2021-05-25 12:27:01,817:INFO:Importing libraries
+2021-05-25 12:27:01,817:INFO:Copying training dataset
+2021-05-25 12:27:01,822:INFO:Defining folds
+2021-05-25 12:27:01,822:INFO:Declaring metric variables
+2021-05-25 12:27:01,822:INFO:Importing untrained model
+2021-05-25 12:27:01,822:INFO:Declaring custom model
+2021-05-25 12:27:01,823:INFO:Orthogonal Matching Pursuit Imported succesfully
+2021-05-25 12:27:01,823:INFO:Cross validation set to False
+2021-05-25 12:27:01,823:INFO:Fitting Model
+2021-05-25 12:27:01,857:INFO:OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None)
+2021-05-25 12:27:01,857:INFO:create_models() succesfully completed......................................
+2021-05-25 12:27:02,010:INFO:Initializing create_model()
+2021-05-25 12:27:02,010:INFO:create_model(estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-1, oob_score=False,
+                      random_state=123, verbose=0, warm_start=False), fold=TimeSeriesSplit(max_train_size=None, n_splits=10), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-25 12:27:02,010:INFO:Checking exceptions
+2021-05-25 12:27:02,010:INFO:Importing libraries
+2021-05-25 12:27:02,011:INFO:Copying training dataset
+2021-05-25 12:27:02,014:INFO:Defining folds
+2021-05-25 12:27:02,014:INFO:Declaring metric variables
+2021-05-25 12:27:02,014:INFO:Importing untrained model
+2021-05-25 12:27:02,014:INFO:Declaring custom model
+2021-05-25 12:27:02,015:INFO:Random Forest Regressor Imported succesfully
+2021-05-25 12:27:02,015:INFO:Cross validation set to False
+2021-05-25 12:27:02,015:INFO:Fitting Model
+2021-05-25 12:27:29,953:INFO:RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-1, oob_score=False,
+                      random_state=123, verbose=0, warm_start=False)
+2021-05-25 12:27:29,954:INFO:create_models() succesfully completed......................................
+2021-05-25 12:27:30,086:INFO:Initializing create_model()
+2021-05-25 12:27:30,086:INFO:create_model(estimator=DecisionTreeRegressor(ccp_alpha=0.0, criterion='mse', max_depth=None,
+                      max_features=None, max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, presort='deprecated',
+                      random_state=123, splitter='best'), fold=TimeSeriesSplit(max_train_size=None, n_splits=10), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-25 12:27:30,086:INFO:Checking exceptions
+2021-05-25 12:27:30,087:INFO:Importing libraries
+2021-05-25 12:27:30,087:INFO:Copying training dataset
+2021-05-25 12:27:30,089:INFO:Defining folds
+2021-05-25 12:27:30,090:INFO:Declaring metric variables
+2021-05-25 12:27:30,090:INFO:Importing untrained model
+2021-05-25 12:27:30,090:INFO:Declaring custom model
+2021-05-25 12:27:30,091:INFO:Decision Tree Regressor Imported succesfully
+2021-05-25 12:27:30,091:INFO:Cross validation set to False
+2021-05-25 12:27:30,091:INFO:Fitting Model
+2021-05-25 12:27:33,021:INFO:DecisionTreeRegressor(ccp_alpha=0.0, criterion='mse', max_depth=None,
+                      max_features=None, max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, presort='deprecated',
+                      random_state=123, splitter='best')
+2021-05-25 12:27:33,021:INFO:create_models() succesfully completed......................................
+2021-05-25 12:27:33,194:INFO:create_model_container: 11
+2021-05-25 12:27:33,194:INFO:master_model_container: 11
+2021-05-25 12:27:33,194:INFO:display_container: 2
+2021-05-25 12:27:33,195:INFO:[OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-1, oob_score=False,
+                      random_state=123, verbose=0, warm_start=False), DecisionTreeRegressor(ccp_alpha=0.0, criterion='mse', max_depth=None,
+                      max_features=None, max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, presort='deprecated',
+                      random_state=123, splitter='best')]
+2021-05-25 12:27:33,195:INFO:compare_models() succesfully completed......................................
+2021-05-25 12:27:34,398:INFO:Initializing predict_model()
+2021-05-25 12:27:34,398:INFO:predict_model(estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-25 12:27:34,398:INFO:Checking exceptions
+2021-05-25 12:27:34,399:INFO:Preloading libraries
+2021-05-25 12:27:34,399:INFO:Preparing display monitor
+2021-05-25 12:27:34,832:INFO:Initializing predict_model()
+2021-05-25 12:27:34,832:INFO:predict_model(estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-25 12:27:34,832:INFO:Checking exceptions
+2021-05-25 12:27:34,832:INFO:Preloading libraries
+2021-05-25 12:27:34,833:INFO:Preparing display monitor
+2021-05-25 12:27:36,134:INFO:Initializing evaluate_model()
+2021-05-25 12:27:36,134:INFO:evaluate_model(estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), fold=None, fit_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2021-05-25 12:27:36,150:INFO:Initializing plot_model()
+2021-05-25 12:27:36,151:INFO:plot_model(plot=parameter, fold=TimeSeriesSplit(max_train_size=None, n_splits=10), use_train_data=False, verbose=True, is_in_evaluate=True, display=None, display_format=None, estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), feature_name=None, fit_kwargs={}, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-25 12:27:36,151:INFO:Checking exceptions
+2021-05-25 12:27:36,151:INFO:Preparing display monitor
+2021-05-25 12:27:36,156:INFO:Preloading libraries
+2021-05-25 12:27:36,157:INFO:Copying training dataset
+2021-05-25 12:27:36,160:INFO:Copying test dataset
+2021-05-25 12:27:36,160:INFO:Plot type: parameter
+2021-05-25 12:27:36,209:INFO:Visual Rendered Successfully
+2021-05-25 12:27:36,319:INFO:plot_model() succesfully completed......................................
+2021-05-25 12:27:36,591:INFO:Initializing plot_model()
+2021-05-25 12:27:36,591:INFO:plot_model(plot=learning, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-25 12:27:36,592:INFO:Checking exceptions
+2021-05-25 12:27:36,592:INFO:Preparing display monitor
+2021-05-25 12:27:36,598:INFO:Preloading libraries
+2021-05-25 12:27:36,599:INFO:Copying training dataset
+2021-05-25 12:27:36,604:INFO:Copying test dataset
+2021-05-25 12:27:36,605:INFO:Plot type: learning
+2021-05-25 12:27:36,615:INFO:Fitting Model
+2021-05-25 12:27:38,499:INFO:Visual Rendered Successfully
+2021-05-25 12:27:38,653:INFO:plot_model() succesfully completed......................................
+2021-05-25 12:27:38,884:INFO:Initializing plot_model()
+2021-05-25 12:27:38,885:INFO:plot_model(plot=feature, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-25 12:27:38,885:INFO:Checking exceptions
+2021-05-25 12:27:38,885:INFO:Preparing display monitor
+2021-05-25 12:27:38,891:INFO:Preloading libraries
+2021-05-25 12:27:38,892:INFO:Copying training dataset
+2021-05-25 12:27:38,895:INFO:Copying test dataset
+2021-05-25 12:27:38,897:INFO:Plot type: feature
+2021-05-25 12:27:39,080:INFO:Visual Rendered Successfully
+2021-05-25 12:27:39,204:INFO:plot_model() succesfully completed......................................
+2021-05-25 12:27:39,438:INFO:Initializing plot_model()
+2021-05-25 12:27:39,438:INFO:plot_model(plot=residuals, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-25 12:27:39,439:INFO:Checking exceptions
+2021-05-25 12:27:39,439:INFO:Preparing display monitor
+2021-05-25 12:27:39,447:INFO:Preloading libraries
+2021-05-25 12:27:39,448:INFO:Copying training dataset
+2021-05-25 12:27:39,453:INFO:Copying test dataset
+2021-05-25 12:27:39,454:INFO:Plot type: residuals
+2021-05-25 12:27:39,505:INFO:Fitting Model
+2021-05-25 12:27:39,579:INFO:Scoring test/hold-out set
+2021-05-25 12:27:41,569:INFO:Visual Rendered Successfully
+2021-05-25 12:27:41,725:INFO:plot_model() succesfully completed......................................
+2021-05-25 12:27:41,809:INFO:Initializing plot_model()
+2021-05-25 12:27:41,809:INFO:plot_model(plot=error, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-25 12:27:41,809:INFO:Checking exceptions
+2021-05-25 12:27:41,809:INFO:Preparing display monitor
+2021-05-25 12:27:41,817:INFO:Preloading libraries
+2021-05-25 12:27:41,818:INFO:Copying training dataset
+2021-05-25 12:27:41,823:INFO:Copying test dataset
+2021-05-25 12:27:41,824:INFO:Plot type: error
+2021-05-25 12:27:41,826:INFO:Fitting Model
+2021-05-25 12:27:41,827:INFO:Scoring test/hold-out set
+2021-05-25 12:27:42,225:INFO:Visual Rendered Successfully
+2021-05-25 12:27:42,344:INFO:plot_model() succesfully completed......................................
