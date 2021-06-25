@@ -9,10 +9,10 @@ def plot_samples(df, n_cols=2,n_rows=2):
     fig, ((ax1, ax2), (ax4, ax5)) = plt.subplots(n_rows,n_cols,sharex=True,sharey=True,figsize=(24, 7))
 
     ax1.plot(df[df.columns[0]], label = df.columns[0])
-    ax1.set_ylabel('Autovector ' + str(df.columns[0]))
+    ax1.set_ylabel('Eigenvector ' + str(df.columns[0]))
 
     ax2.plot(df[df.columns[-2]], label = df.columns[-2])
-    ax2.set_ylabel('Autovector ' + str(df.columns[-2]))
+    ax2.set_ylabel('Eigenvector ' + str(df.columns[-2]))
 
     ax4.plot(df[df.columns[1]], label = df.columns[1])
     ax4.set_ylabel('Autovector ' + str(df.columns[1]))
