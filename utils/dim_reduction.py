@@ -10,7 +10,7 @@ class pca():
         self.threshold = threshold
         
         self.model = PCA()
-        self.model.fit(self.U)
+        self.model.fit_transform(self.U)
         self.cumsum = np.cumsum(self.model.explained_variance_ratio_)
         self.d = np.argmax(self.cumsum >= self.threshold) + 1
         
@@ -18,8 +18,8 @@ class pca():
         
         
     def save_model(self, path):
-        pickle.dump(self.model_red, open(path, 'wb'))
-        
+        pickle.dump(pca, open(path, 'wb'))
+        #self.model_red
     def load_model(self, path):
         self.model_red = pickle.load(open(path, 'rb'))
         
