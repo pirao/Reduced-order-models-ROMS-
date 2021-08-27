@@ -2,8 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-import seaborn as sns
-
+import ppscore as pps
+from sklearn.feature_selection import SelectKBest, f_regression, chi2
+from sklearn.ensemble import RandomForestRegressor
+from utils.model_summary_functions import feature_importance, metrics
+from sklearn.metrics import mean_squared_error, f1_score, accuracy_score, mean_absolute_error, r2_score
 
 def plot_samples(df, n_cols=2,n_rows=2):
     fig, ((ax1, ax2), (ax4, ax5)) = plt.subplots(n_rows,n_cols,sharex=True,sharey=True,figsize=(24, 7))
@@ -72,3 +75,35 @@ def scatterplot_pearson(df, x_vars, y_vars, cmap='viridis'):
     g.tight_layout()
     g.add_legend()
     return g
+
+
+def pps_heat_map(data, figsize=(30, 15)):
+    corr = pps.matrix(data)[['x', 'y', 'ppscore']].pivot(
+        columns='x', index='y', values='ppscore')
+    plt.figure(figsize=figsize)
+    sns.heatmap(corr, cmap="coolwarm", linewidths=0.5, annot=True)
+    plt.title('Power predictive score (PPS)')
+    plt.show()
+    return
+
+
+def plot_selectkbest(X_train, X_test, y_train, y_test, step, model, score_func=f_regression):
+
+    k_vs_score = []
+    range = np.arange(2, X_train.shape[1]+1, step)
+
+    for k in range:
+        selector = SelectKBest(score_func=score_func, k=k)
+        X_new2 = selector.fit_transform(X_train, y_train)
+        X_val = selector.transform(X_test)
+
+        mdl = model
+        mdl.fit(X_new2, y_train)
+
+        p = mdl.predict(X_val)
+        print('k = {} '.format(k))
+        score = metrics(y_test, p)
+        k_vs_score.append(r2_score(y_test, p))
+
+    plt.plot(range, k_vs_score)
+    return

@@ -50,14 +50,20 @@ class pca():
         ax[0].set_title('Original data')
         ax[0].set_ylabel('Time')
 
+        print('Original data plotted')
+        
         surf2 = ax[1].pcolor(X, T, U_reduced,cmap=plt.get_cmap("seismic"),shading='auto',vmin=vmin, vmax=vmax)
         fig.colorbar(surf2, ax=ax[1])
         ax[1].set_title('Reduced data')
 
+        print('Reduced data plotted')
+        
         diff =  abs(U-U_reduced)
         surf3 = ax[2].pcolor(X, T, diff,cmap=plt.get_cmap("seismic"),shading='auto') 
         fig.colorbar(surf3, ax=ax[2])
         ax[2].set_title('Absolute difference')
         plt.tight_layout()
+        
+        print('Error plotted')
         
         return fig, ax, diff
