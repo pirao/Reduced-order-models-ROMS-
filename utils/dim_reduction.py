@@ -9,33 +9,38 @@ class pca():
         self.U = U
         self.threshold = threshold
         
+        
         self.model = PCA()
         self.model.fit_transform(self.U)
         self.cumsum = np.cumsum(self.model.explained_variance_ratio_)
-        self.d = np.argmax(self.cumsum >= self.threshold) + 1
         
-        self.model_red = PCA(n_components=self.d)
-        
+        self.d = np.argmax(self.cumsum >= self.threshold)
+        self.num_pc = self.d + 1
+
+        self.x_values = np.arange(1, len(self.cumsum)+1, 1)
+
+        self.model_red = PCA(n_components=self.num_pc)
         
     def save_model(self, path):
         pickle.dump(pca, open(path, 'wb'))
-        #self.model_red
+
     def load_model(self, path):
         self.model_red = pickle.load(open(path, 'rb'))
         
     def plot_pca(self):
       
-        plt.plot(self.cumsum * 100,label='Train dataset')
-        plt.xlabel('Number of principal components (PCs)')
+        plt.plot(self.x_values, self.cumsum * 100, label='Cumulative')
+        plt.plot(self.x_values, self.model.explained_variance_ratio_ * 100, label='Individual')
+        plt.xlabel('Principal component number')
         plt.ylabel('Explained cumulative variance (%)')
-        
-        plt.vlines(x=self.d, ymin=0, ymax=100*self.threshold,
-                    label = '{0} principal components with {1}% explained variance'.format(self.d,100*self.threshold),
-                    linestyles='dashed',
-                    color='red')
-        
-        plt.legend(fontsize='16')
-        plt.show()    
+
+        plt.vlines(x=self.num_pc, ymin=0, ymax=100,
+                   label='{0} principal components with {1}% explained variance'.format(self.num_pc, 100*np.round(self.cumsum[self.d], 4)),
+                   linestyles='dashed',
+                   color='red')
+
+        plt.legend()
+        plt.show()
         
             
     def plot_compare(self,X,T,U,U_reduced):

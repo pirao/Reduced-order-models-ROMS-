@@ -28,7 +28,7 @@ def plot_samples(df, n_cols=2,n_rows=2):
     plt.tight_layout()
     plt.show()
     
-def plot_autocorrelation(df,i=0,zoom=False,acf_lim=300,pacf_lim=30):
+def plot_autocorrelation(df,i=0,zoom=False,acf_lim=100,pacf_lim=20):
     fig, ax = plt.subplots(1,2,figsize=(25, 5))
     
     plot_acf(df[df.columns[i]],lags=len(df)-1,ax=ax[0]);
